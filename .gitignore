@@ -1,0 +1,76 @@
+# Win
+Thumbs.db
+
+# Mac
+.DS_Store
+
+# Vim
+*.sw?
+*~
+
+# svn
+.svn/
+
+# Eclipse
+.project
+.settings
+.buildpath
+
+# CakePHP
+tmp/*
+files/*
+[Cc]onfig/core.php
+[Cc]onfig/database.php
+app/tmp/*
+app/webroot/files/*
+app/webroot/build/*
+app/webroot/blog/wp-config.php
+app/[Cc]onfig/core.php
+app/[Cc]onfig/database.php
+app/[Cc]onfig/facebook.php
+!empty
+node_modules/
+bower_components/
+
+# WordPress
+app/webroot/blog/wp-content/uploads/*
+admin-blog-editor.css
+
+# Phing build results
+ci/build/*
+
+# chef
+cookbooks/*
+server/dev/cookbooks/*
+.vagrant
+
+# gulp
+app/webroot/css/
+app/webroot/css/*.css
+app/webroot/fonts/
+app/webroot/css/fonts/*
+app/webroot/js/
+app/webroot/js/*.js
+app/webroot/js/*.map
+app/webroot/img/*
+front_src/css/*
+gulp/core.*
+
+# composer
+vendor/*
+composer.lock
+
+# capistrano
+deploy/bundle/
+deploy/vendor/
+deploy/.bundle/
+deploy/Gemfile.lock
+
+# other
+_htaccess
+www/campaign/*
+www/products/CE/*
+www/products/CA/*
+www/products/test/*
+!www/products/CW/crepe
+psd/

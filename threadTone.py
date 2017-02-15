@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 # Parameters
-imgPath = "./path"  
+imgPath = "./path/image.png" 
 imgRadius = 500     # Number of pixels that the image radius is resized to
 
 initPin = 0         # Initial pin to start threading from 
@@ -63,12 +63,12 @@ def linePixels(pin0, pin1):
 
 
 if __name__=="__main__":
-    print banner
+    print(banner)
 
     # Load image
     image = cv2.imread(imgPath)
 
-    print "[+] loaded " + imgPath + " for threading.."
+    print("[+] loaded " + imgPath + " for threading..")
 
     # Crop image
     height, width = image.shape[0:2]
@@ -93,7 +93,7 @@ if __name__=="__main__":
     imgMasked = maskImage(imgInverted, imgRadius)
     cv2.imwrite('./masked.png', imgMasked)
 
-    print "[+] image preprocessed for threading.."
+    print("[+] image preprocessed for threading..")
 
     # Define pin coordinates
     coords = pinCoords(imgRadius, nPins)
@@ -164,7 +164,7 @@ if __name__=="__main__":
         sys.stdout.write("[+] Computing line " + str(line + 1) + " of " + str(nLines) + " total")
         sys.stdout.flush()
 
-    print "\n[+] Image threaded"
+    print("\n[+] Image threaded")
 
     # Wait for user and save before exit
     cv2.waitKey(0)
