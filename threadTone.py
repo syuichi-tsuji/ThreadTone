@@ -3,12 +3,12 @@ import cv2
 import numpy as np
 
 # Parameters
-imgPath = "./path/image.png" 
+imgPath = "./path/22318_main.jpg"
 imgRadius = 500     # Number of pixels that the image radius is resized to
 
 initPin = 0         # Initial pin to start threading from 
-nPins = 600         # Number of pins on the circular loom
-nLines = 1500        # Maximal number of lines
+nPins = 1000         # Number of pins on the circular loom
+nLines = 3000        # Maximal number of lines
 
 minLoop = 3         # Disallow loops of less than minLoop lines
 lineWidth = 3       # The number of pixels that represents the width of a thread
